@@ -85,10 +85,6 @@ def train(mnist):
         saver = tf.train.Saver()
         saver.save(sess, 'model.ckpt')
 
-
-
-
-
 def main(argv = None):
     mnist = input_data.read_data_sets("/home/jhy/Program/Deep_learning",one_hot =True)
     train(mnist)
